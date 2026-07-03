@@ -1,0 +1,548 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#222;
+    line-height:1.6;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/* ===========================
+   COMMON
+=========================== */
+
+section{
+    padding:90px 10%;
+}
+
+.heading{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#0f172a;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#2563eb;
+    color:white;
+    border-radius:8px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+.btn2{
+    background:#111827;
+    margin-left:15px;
+}
+
+.btn2:hover{
+    background:#000;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+.navbar{
+    width:80%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:75px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#2563eb;
+}
+
+.nav-links{
+    display:flex;
+    gap:35px;
+}
+
+.nav-links a{
+    color:#222;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#2563eb;
+}
+
+.menu-btn{
+    display:none;
+    font-size:25px;
+    cursor:pointer;
+}
+
+/* ===========================
+   HOME
+=========================== */
+
+.home{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:100vh;
+    gap:60px;
+}
+
+.home-text{
+    flex:1;
+}
+
+.home-text h3{
+    font-size:28px;
+    color:#2563eb;
+}
+
+.home-text h1{
+    font-size:58px;
+    margin:10px 0;
+    color:#111827;
+}
+
+.home-text h2{
+    font-size:34px;
+    color:#555;
+}
+
+.home-text p{
+    margin:20px 0;
+    color:#666;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+.home-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.home-image img{
+    width:380px;
+    height:380px;
+    border-radius:50%;
+    object-fit:cover;
+    border:8px solid #2563eb;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about-container{
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+
+.about-image{
+    flex:1;
+}
+
+.about-image img{
+    width:350px;
+    border-radius:15px;
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text h3{
+    font-size:35px;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    margin-bottom:15px;
+    color:#555;
+}
+
+/* ===========================
+   SKILLS
+=========================== */
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    background:white;
+    padding:30px;
+    text-align:center;
+    font-size:20px;
+    font-weight:600;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.skill-card:hover{
+    background:#2563eb;
+    color:white;
+    transform:translateY(-10px);
+}
+
+
+
+
+
+
+
+
+
+/* ===========================
+   PROJECTS
+=========================== */
+
+.projects-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    /*transition:.4s;*/
+    display:flex;
+    flex-direction:column;
+}
+
+.project-card:hover{
+    background:#2563eb;
+    color:white;
+    transform:translateY(-10px);
+}
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+/*.project-card h3{
+    padding:20px 20px 10px;
+    font-size:24px;
+    margin-left: 5px;
+}
+
+.project-card p{
+    padding:0 20px;
+    margin-bottom:10px;
+    margin-left: 5px;
+}*/
+
+.project-card .btn{
+    margin-top:auto;
+    width:150px;
+    rext-align:center;
+}
+
+.project-content{
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+.project-content h3{
+    font: size 32px;px;
+    margin: 0 0 15px;
+}
+
+.project-content p{
+    margin: 0 0 15px;
+    line-height: 1.8;
+}
+
+.project-features{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-features li{
+    margin: 8px 0;
+}
+
+.tech-stack span{
+    display:inline-block;
+    background:#2563eb;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:20px;
+    margin:5px;
+    font-size:14px;
+}
+
+
+
+/*.project-card h3,
+.project-card p {
+   /* padding-left: 0;*/
+   /* margin-left: 10px;*/
+}*/
+
+/* ===========================
+   EDUCATION
+=========================== */
+
+.education-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.edu-card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.edu-card:hover{
+    background:#2563eb;
+    color:#fff;
+    transform:translateY(-8px);
+}
+
+.edu-card p{
+    margin-top:10px;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+    font-size:16px;
+}
+
+form textarea{
+    resize:none;
+}
+
+form .btn{
+    border:none;
+    cursor:pointer;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#111827;
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.social{
+    margin:20px 0;
+}
+
+.social a{
+    display:inline-block;
+    width:45px;
+    height:45px;
+    line-height:45px;
+    background:#2563eb;
+    color:#fff;
+    border-radius:50%;
+    margin:0 8px;
+    font-size:20px;
+    transition:.3s;
+}
+
+.social a:hover{
+    transform:translateY(-5px);
+    background:#1d4ed8;
+}
+
+footer p{
+    margin-top:20px;
+    color:#ccc;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+    .navbar{
+        width:90%;
+    }
+
+    .home{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding-top:120px;
+    }
+
+    .home-image img{
+        width:300px;
+        height:300px;
+    }
+
+    .about-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .menu-btn{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:75px;
+        left:-100%;
+        width:100%;
+        background:#fff;
+        flex-direction:column;
+        text-align:center;
+        transition:.4s;
+        padding:30px 0;
+    }
+
+    .nav-links.active{
+        left:0;
+    }
+
+    .nav-links li{
+        margin:15px 0;
+    }
+
+    .heading{
+        font-size:32px;
+    }
+
+    .home-text h1{
+        font-size:42px;
+    }
+
+    .home-text h2{
+        font-size:28px;
+    }
+
+    .buttons{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .btn2{
+        margin-left:0;
+    }
+
+}
+
+@media(max-width:480px){
+
+    section{
+        padding:70px 7%;
+    }
+
+    .home-text h1{
+        font-size:34px;
+    }
+
+    .home-text h2{
+        font-size:22px;
+    }
+
+    .home-image img{
+        width:220px;
+        height:220px;
+    }
+
+    .project-card img{
+        height:180px;
+    }
+
+}
