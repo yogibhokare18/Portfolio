@@ -201,8 +201,8 @@ Responsive Weather Application using OpenWeatherMap API.
 **Name:** Yoginand Bhokare
 
 - GitHub: https://github.com/yogibhokare18
-- LinkedIn: *(Add your LinkedIn Profile Link)*
-- Email: *(Add your Email Address)*
+- LinkedIn: https://www.linkedin.com/in/yoginand-bhokare-725b51275/
+- Email: yoginandb@gmail.com
 
 ---
 
