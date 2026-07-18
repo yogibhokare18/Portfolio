@@ -84,7 +84,7 @@ Portfolio/
 
 ## 👨‍💻 About Me
 
-Hello! I'm **Yoginand Bhokare**, an MCA student passionate about **Full Stack Web Development**.
+Hello! I'm **Yoginand Bhokare**, an MCA student passionate about **Full Stack Developer**.
 
 I enjoy building responsive and modern web applications using **HTML, CSS, JavaScript, Python, Django, and MySQL**.
 
@@ -150,9 +150,9 @@ Responsive Weather Application using OpenWeatherMap API.
 
 **Technology Used**
 
-- HTML
-- CSS
-- JavaScript
+- React.js
+- Axios
+- Bootstrap
 - OpenWeatherMap API
 
 ---
