@@ -45,7 +45,7 @@ Portfolio/
 │── style.css
 │── script.js
 │── README.md
-│── Yoginand_Professional_Resume.pdf
+│── Yoginand_Bhokare_Resume.pdf
 │
 └── images/
     ├── profile.jpg
