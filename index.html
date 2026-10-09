@@ -69,7 +69,7 @@
 
             <div class="buttons">
 
-                <a href="Yoginand_Bhokare_Resume.pdf" class="btn">Download Resume</a>
+                <a href="resume.pdf/Yoginand_Bhokare_Resume.pdf" class="btn">Download Resume</a>
 
                 <a href="#contact" class="btn btn2">Contact Me</a>
 
@@ -161,7 +161,7 @@
             <div class="skill-card">
                 ReactJS
             </div>
-            
+
             <div class="skill-card">
                 MySQL
             </div>
@@ -224,7 +224,7 @@
             <li>✔ Delete Student</li>
         </ul>
 
-        <a href="https://github.com/yogibhokare18/Student-Management-System"> 
+        <a href="https://github.com/yogibhokare18/Student-Management-System">
 
         </a>
 
@@ -250,8 +250,8 @@
         </p>
 
         <div class="tech-stack">
-            <span>HTML</span>
-            <span>CSS</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
             <span>JavaScript</span>
         </div>
 
@@ -294,7 +294,7 @@
             <span>Bootstrap</span>
             <span>OpenWeatherMap API</span>
         </div>
-        
+
         <ul class="project-features">
             <li>✔ Live Weather</li>
             <li>✔ Search by City</li>
@@ -367,38 +367,51 @@
 
 </section>
 
-    <!-- ================= CONTACT ================= -->
+<!-- ================= CONTACT ================= -->
 
-    <section id="contact">
+<section id="contact">
 
-        <h2 class="heading">
-            Contact Me
-        </h2>
+    <h2 class="heading">Contact Me</h2>
 
-        <form>
+    <form id="contact-form">
 
-            <input type="text"
-                placeholder="Enter Your Name">
+        <input
+            type="text"
+            name="from_name"
+            placeholder="Enter Your Name"
+            required
+        >
 
-            <input type="email"
-                placeholder="Enter Your Email">
+        <input
+            type="email"
+            name="from_email"
+            placeholder="Enter Your Email"
+            required
+        >
 
-            <input type="text"
-                placeholder="Subject">
+        <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            required
+        >
 
-            <textarea
-                rows="6"
-                placeholder="Your Message"></textarea>
+        <textarea
+            name="message"
+            rows="6"
+            placeholder="Your Message"
+            required
+        ></textarea>
 
-            <button class="btn">
+        <button type="submit" class="btn" id="send-btn">
+            Send Message
+        </button>
 
-                Send Message
+        <p id="form-status" role="status"></p>
 
-            </button>
+    </form>
 
-        </form>
-
-    </section>
+</section>
 
     <!-- ================= FOOTER ================= -->
 
@@ -432,6 +445,7 @@
 
 
     <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
 
 </body>
