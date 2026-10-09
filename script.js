@@ -139,44 +139,7 @@ typing.textContent = "";
 typeEffect();
 
 
-// ===============================
-// CONTACT FORM VALIDATION
-// ===============================
 
-const form = document.querySelector("form");
-
-form.addEventListener("submit", function (e) {
-
-    e.preventDefault();
-
-    const inputs = form.querySelectorAll("input, textarea");
-
-    let valid = true;
-
-    inputs.forEach(input => {
-
-        if (input.value.trim() === "") {
-
-            valid = false;
-
-        }
-
-    });
-
-    if (valid) {
-
-        alert("Message Sent Successfully!");
-
-        form.reset();
-
-    }
-    else {
-
-        alert("Please fill all fields.");
-
-    }
-
-});
 
 
 // ===============================
@@ -228,3 +191,64 @@ topBtn.addEventListener("click", () => {
     });
 
 });
+
+
+
+
+// ===============================
+// CONTACT EMAIL - EMAILJS
+// ===============================
+
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const sendBtn = document.getElementById("send-btn");
+        const formStatus = document.getElementById("form-status");
+
+        const SERVICE_ID = "service_gi6wteo";
+        const TEMPLATE_ID = "template_6ak5j3z";
+        const PUBLIC_KEY = "7OBmIeugIznAmigqX";
+
+        sendBtn.disabled = true;
+        sendBtn.textContent = "Sending...";
+        formStatus.textContent = "";
+
+        emailjs.sendForm(
+            SERVICE_ID,
+            TEMPLATE_ID,
+            contactForm,
+            { publicKey: PUBLIC_KEY }
+        )
+        .then(function () {
+
+            formStatus.textContent = "Message sent successfully!";
+            formStatus.style.color = "green";
+
+            contactForm.reset();
+
+        })
+        .catch(function (error) {
+
+            console.error("EmailJS Error:", error);
+
+            formStatus.textContent =
+                "Message could not be sent. Please try again.";
+
+            formStatus.style.color = "red";
+
+        })
+        .finally(function () {
+
+            sendBtn.disabled = false;
+            sendBtn.textContent = "Send Message";
+
+        });
+
+    });
+
+}
