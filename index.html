@@ -376,32 +376,41 @@
     <form id="contact-form">
 
         <input
-            type="text"
-            name="from_name"
-            placeholder="Enter Your Name"
-            required
+        type="text"
+        name="from_name"
+        maxlength="80"
+        placeholder="Enter Your Name"
+        required
         >
 
         <input
-            type="email"
-            name="from_email"
-            placeholder="Enter Your Email"
-            required
+        type="email"
+        name="from_email"
+        maxlength="254"
+        placeholder="Enter Your Email"
+        required
         >
 
         <input
-            type="text"
-            name="subject"
-            placeholder="Subject"
-            required
+        type="text"
+        name="subject"
+        maxlength="120"
+        placeholder="Subject"
+        required
         >
 
         <textarea
-            name="message"
-            rows="6"
-            placeholder="Your Message"
-            required
+        name="message"
+        rows="6"
+        maxlength="3000"
+        placeholder="Your Message"
+        required
         ></textarea>
+
+        <div
+            class="g-recaptcha"
+            data-sitekey="6LdpnOYtAAAAAINyxIrFYluVGe1yTbsXb_kc1gmB">
+        </div>
 
         <button type="submit" class="btn" id="send-btn">
             Send Message
@@ -445,6 +454,7 @@
 
 
     <!-- JavaScript -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
 
