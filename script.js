@@ -235,6 +235,7 @@ if (contactForm) {
         .catch(function (error) {
 
             console.error("EmailJS Error:", error);
+            console.log("Error details:", error.status, error.text);
 
             formStatus.textContent =
                 "Message could not be sent. Please try again.";
@@ -252,3 +253,13 @@ if (contactForm) {
     });
 
 }
+
+// EmailJS security settings
+emailjs.init({
+    publicKey: "7OBmIeugIznAmigqX",
+    blockHeadless: true,
+    limitRate: {
+        id: "portfolio-contact",
+        throttle: 10000
+    }
+});
